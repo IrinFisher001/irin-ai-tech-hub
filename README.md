@@ -1,59 +1,97 @@
-# IrinAiTechHub
+# IRIN AI TECH HUB
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.16.
+## About
 
-## Development server
+IRIN AI TECH HUB is a professional portfolio and technical showcase designed to demonstrate:
 
-To start a local development server, run:
+- Full Stack Development
+- Solution Architecture
+- Technical Leadership
+- Cloud Engineering
+- Enterprise Software Development
 
-```bash
-ng serve
-```
+This platform serves as a centralized location for recruiters, hiring managers and industry professionals to explore my experience, skills, projects and architectural solutions.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Technology Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Frontend
 
-```bash
-ng generate component component-name
-```
+- Angular
+- TypeScript
+- SCSS
+- Angular Material
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Hosting
 
-```bash
-ng generate --help
-```
+- GitHub Pages
 
-## Building
+### Version Control
 
-To build the project run:
+- GitHub
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Planned Features
 
-## Running unit tests
+### Home
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Professional overview and introduction.
 
-```bash
-ng test
-```
+### About
 
-## Running end-to-end tests
+Career experience, leadership journey and technical background.
 
-For end-to-end (e2e) testing, run:
+### Skills
 
-```bash
-ng e2e
-```
+Interactive technical skills dashboard.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Projects
 
-## Additional Resources
+Showcase of professional and personal projects.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Architecture
+
+Solution architecture diagrams and case studies.
+
+### Resume
+
+Downloadable CV and professional links.
+
+### Contact
+
+Professional contact information.
+
+---
+
+## Roadmap
+
+### Sprint 1
+
+- Repository Setup
+- Angular Foundation
+- Application Structure
+
+### Sprint 2
+
+- Home Page
+- About Page
+- Skills Dashboard
+
+### Sprint 3
+
+- Projects Showcase
+- Architecture Gallery
+
+### Sprint 4
+
+- GitHub Pages Deployment
+
+---
+
+## Author
+
+**Irin Gerrel Fisher**
+
+Senior Full Stack Developer | Solution Architect | Technical Leader
