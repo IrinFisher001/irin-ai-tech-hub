@@ -1,0 +1,37 @@
+.intro {
+  margin-bottom: 2rem;
+}
+
+.architecture-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.architecture-card {
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
+
+  padding: 1.5rem;
+}
+
+.architecture-card h2 {
+  color: #38bdf8;
+
+  margin-bottom: 1rem;
+}
+
+.architecture-card pre {
+  background: #020617;
+
+  color: #38bdf8;
+
+  padding: 1rem;
+
+  border-radius: 8px;
+
+  margin-bottom: 1rem;
+}
