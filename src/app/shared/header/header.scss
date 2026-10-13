@@ -1,0 +1,21 @@
+header {
+  background: #0f172a;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
