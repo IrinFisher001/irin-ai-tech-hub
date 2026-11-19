@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FEATURED_PROJECTS } from '../../data/featured-projects';
 
 @Component({
   selector: 'app-projects',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
-export class Projects {}
+export class Projects {
+  projects = FEATURED_PROJECTS;
+}

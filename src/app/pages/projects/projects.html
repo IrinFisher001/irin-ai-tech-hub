@@ -1,79 +1,100 @@
-<h1>Project Showcase</h1>
+<section class="projects-section">
 
-<div class="projects-grid">
-
-  <div class="project-card">
-
-    <h2>Enterprise Reconciliation Platform</h2>
-
-    <p class="problem">
-      Automated reconciliation of high-volume financial transactions.
-    </p>
-
-    <h3>Technologies</h3>
-
-    <div class="tags">
-      <span>.NET</span>
-      <span>Angular</span>
-      <span>SQL Server</span>
-      <span>Azure</span>
-    </div>
-
-    <h3>Outcome</h3>
+  <div class="page-header">
+    <h1>Featured Projects</h1>
 
     <p>
-      Reduced manual processing and improved operational efficiency.
+      A selection of enterprise solutions, architecture initiatives,
+      cloud platforms and modern applications developed throughout my career.
     </p>
+  </div>
+
+  <div class="projects-grid">
+
+    @for(project of projects; track project.id){
+
+      <div class="project-card">
+
+        <span class="project-subtitle">
+          {{ project.subtitle }}
+        </span>
+
+        <h2>{{ project.title }}</h2>
+
+        <p>
+          {{ project.description }}
+        </p>
+
+        <h3>Business Challenge</h3>
+
+        <p>
+          {{ project.businessChallenge }}
+        </p>
+
+        <h3>Solution</h3>
+
+        <p>
+          {{ project.solution }}
+        </p>
+
+        <div class="role">
+          <strong>Role:</strong>
+          {{ project.role }}
+        </div>
+
+        <h3>Technologies</h3>
+
+        <div class="tags">
+
+          @for(tech of project.technologies; track tech){
+
+            <span>{{ tech }}</span>
+
+          }
+
+        </div>
+
+        <h3>Key Outcomes</h3>
+
+        <ul>
+
+          @for(item of project.achievements; track item){
+
+            <li>{{ item }}</li>
+
+          }
+
+        </ul>
+
+      </div>
+
+    }
 
   </div>
 
-  <div class="project-card">
+  <section class="impact-section">
 
-    <h2>Identity & Access Management Solution</h2>
+    <h2>Career Impact</h2>
 
-    <p class="problem">
-      Centralized authentication and authorization across systems.
-    </p>
+    <div class="impact-grid">
 
-    <h3>Technologies</h3>
+      <div class="impact-card">
+        <h3>13+</h3>
+        <p>Years Experience</p>
+      </div>
 
-    <div class="tags">
-      <span>Keycloak</span>
-      <span>.NET</span>
-      <span>REST APIs</span>
+      <div class="impact-card">
+        <h3>20+</h3>
+        <p>Enterprise Solutions Delivered</p>
+      </div>
+
+      <div class="impact-card">
+        <h3>Full Stack</h3>
+        <p>Architecture & Development Expertise</p>
+      </div>
+
     </div>
 
-    <h3>Outcome</h3>
+  </section>
 
-    <p>
-      Improved security, governance and user management.
-    </p>
-
-  </div>
-
-  <div class="project-card">
-
-    <h2>Cloud-Native API Platform</h2>
-
-    <p class="problem">
-      Scalable platform supporting enterprise integrations.
-    </p>
-
-    <h3>Technologies</h3>
-
-    <div class="tags">
-      <span>.NET</span>
-      <span>Azure</span>
-      <span>Docker</span>
-      <span>CI/CD</span>
-    </div>
-
-    <h3>Outcome</h3>
-
-    <p>
-      Delivered secure and scalable API services.
-    </p>
-
-  </div>
-
-</div>
+</section>
