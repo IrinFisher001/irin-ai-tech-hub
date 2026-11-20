@@ -1,0 +1,49 @@
+<button
+  class="chat-button"
+  (click)="toggleChat()">
+
+  💬 Ask IRIN AI
+</button>
+
+@if (isOpen) {
+
+<div class="chat-window">
+
+  <div class="chat-header">
+    Ask IRIN AI
+  </div>
+
+  <div class="chat-body">
+
+    <div class="welcome-message">
+      <p>
+        Hello, I'm IRIN AI.
+      </p>
+
+      <p>
+        Ask me about:
+      </p>
+
+      <ul>
+        <li>Services</li>
+        <li>Experience</li>
+        <li>Projects</li>
+        <li>Architecture</li>
+        <li>Skills</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="chat-footer">
+
+    <input
+      type="text"
+      placeholder="Type your question..." />
+
+  </div>
+
+</div>
+
+}
