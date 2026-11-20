@@ -1,0 +1,32 @@
+<section class="intro">
+  <h1>Services</h1>
+  <p>Six ways I help businesses turn technology into results.</p>
+</section>
+
+<section class="grid">
+  @for (s of services; track s.title) {
+    <article class="glass">
+      <h2>{{ s.title }}</h2>
+      <p class="promise">{{ s.promise }}</p>
+      <p class="detail">{{ s.detail }}</p>
+      <ul class="chips">
+        @for (t of s.tech; track t) {
+          <li>{{ t }}</li>
+        }
+      </ul>
+    </article>
+  }
+</section>
+
+<section class="band">
+  <h2>Specialist depth: data privacy</h2>
+  <p>
+    Hands-on experience with data masking, privacy and data management tools, including Informatica, Delphix and
+    OneTrust (OneTrust Certified Professional), for organisations that handle sensitive information.
+  </p>
+</section>
+
+<section class="cta">
+  <h2>Have something in mind?</h2>
+  <a class="btn" routerLink="/contact">Get in Touch</a>
+</section>
