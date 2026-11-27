@@ -54,18 +54,14 @@ export class ChatAssistant {
 
     const answer = this.irin.ask(q);
 
-    setTimeout(() => {
+this.messages.push({
+  from: 'ai',
+  text: answer.text,
+  links: answer.links
+  });
 
-      this.messages.push({
-        from: 'ai',
-        text: answer.text,
-        links: answer.links
-      });
+  this.suggestions = answer.followUps;
 
-      this.suggestions = answer.followUps;
-
-    }, 350);
-
-    this.input = '';
+  this.input = '';
   }
 }
