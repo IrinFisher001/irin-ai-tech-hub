@@ -3,6 +3,7 @@
   (click)="toggleChat()">
 
   💬 Ask IRIN AI
+
 </button>
 
 @if (isOpen) {
@@ -15,24 +16,40 @@
 
   <div class="chat-body">
 
-    <div class="welcome-message">
-      <p>
-        Hello, I'm IRIN AI.
-      </p>
+    @for (message of messages; track $index) {
 
-      <p>
-        Ask me about:
-      </p>
+      <div class="message" [class.user]="message.from === 'user'" [class.ai]="message.from === 'ai'">
 
-      <ul>
-        <li>Services</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Architecture</li>
-        <li>Skills</li>
-      </ul>
+        <p>{{ message.text }}</p>
 
-    </div>
+        @for (link of message.links ?? []; track link.route) {
+
+          <a [routerLink]="link.route">
+            {{ link.label }}
+          </a>
+
+        }
+
+      </div>
+
+    }
+
+  </div>
+
+  <div class="chat-suggestions">
+
+    @for (suggestion of suggestions; track suggestion) {
+
+      <button
+        type="button"
+        class="suggestion-chip"
+        (click)="send(suggestion)">
+
+        {{ suggestion }}
+
+      </button>
+
+    }
 
   </div>
 
@@ -40,7 +57,17 @@
 
     <input
       type="text"
+      [(ngModel)]="input"
+      (keyup.enter)="send()"
       placeholder="Type your question..." />
+
+    <button
+      type="button"
+      (click)="send()">
+
+      Send
+
+    </button>
 
   </div>
 
