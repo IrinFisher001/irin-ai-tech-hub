@@ -88,3 +88,26 @@
 .timeline-item h3 {
   color: #38bdf8;
 }
+
+.vision-card {
+  margin-bottom: 3rem;
+  padding: 2rem;
+
+  background: rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.vision-card h2 {
+  color: #29b6f6;
+  margin-bottom: 1rem;
+}
+
+.vision-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}

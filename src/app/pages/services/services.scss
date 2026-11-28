@@ -36,3 +36,44 @@
   background: #1e6fd9; font-weight: 500;
 }
 .btn:hover { background: #2b7de9; }
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+
+  .intro {
+    padding: 60px 20px 20px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .glass {
+    padding: 20px;
+  }
+
+  .band {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  .band h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    padding: 40px 20px 60px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+}

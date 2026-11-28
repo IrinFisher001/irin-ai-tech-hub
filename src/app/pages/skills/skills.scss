@@ -5,10 +5,11 @@
 }
 
 .skill-card {
-  background: #1e293b;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid #334155;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .skill-card h3 {
@@ -22,4 +23,23 @@
 
 .skill-card li {
   margin-bottom: 0.5rem;
+}
+
+.skills-section {
+  padding: 2rem;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills-header h1 {
+  color: #29b6f6;
+}
+
+.skills-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #cbd5e1;
 }

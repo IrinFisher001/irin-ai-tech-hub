@@ -55,3 +55,49 @@ h1 span { background: linear-gradient(90deg, #29b6f6, #4f8dff); -webkit-backgrou
 .cta { text-align: center; padding-bottom: 72px; }
 .cta p { color: #b9c7e4; max-width: 640px; margin: 0 auto; }
 .center { justify-content: center; }
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 72px 20px 60px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .block {
+    padding: 48px 20px 20px;
+  }
+
+  .block h2 {
+    font-size: 1.75rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+}
