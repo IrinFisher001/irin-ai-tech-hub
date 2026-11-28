@@ -111,3 +111,25 @@
   color: #cbd5e1;
   line-height: 1.7;
 }
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 1rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card,
+  .vision-card {
+    padding: 1.25rem;
+    overflow-wrap: break-word;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
